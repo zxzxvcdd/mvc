@@ -1,6 +1,7 @@
 package com.spring.mvc.score.controller;
 
 import com.spring.mvc.score.domain.Score;
+import com.spring.mvc.score.repository.ScoreMapper;
 import com.spring.mvc.score.repository.ScoreRepository;
 import com.spring.mvc.score.service.ScoreService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +22,7 @@ import java.util.List;
 public class ScoreController {
 
 
-    private final ScoreRepository repository;
+    private final ScoreMapper repository;
 
     private final ScoreService service;
 
